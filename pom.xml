@@ -27,7 +27,7 @@
     </parent>
 
     <groupId>com.stratio.crossdata</groupId>
-    <artifactId>crossdata-auth-interface_2.11</artifactId>
+    <artifactId>crossdata-auth-interface_2.12</artifactId>
     <version>0.7.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Crossdata auth interface</name>
@@ -71,11 +71,11 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <outputFileName>stratio-crossdata</outputFileName>
         <!-- Scala version and cross build properties -->
-        <scala.binary.version>2.11</scala.binary.version>
-        <scala.version>2.11.8</scala.version>
-        <scala_2.11.version>2.11.8</scala_2.11.version>
-        <default.scala.binary.version>2.11</default.scala.binary.version>
-        <default.scala.version>${scala_2.11.version}</default.scala.version>
+        <scala.binary.version>2.12</scala.binary.version>
+        <scala.version>2.12.10</scala.version>
+        <scala_2.12.version>2.12.10</scala_2.12.version>
+        <default.scala.binary.version>2.12</default.scala.binary.version>
+        <default.scala.version>${scala_2.12.version}</default.scala.version>
     </properties>
 
     <dependencies>
