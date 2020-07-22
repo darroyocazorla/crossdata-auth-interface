@@ -23,12 +23,12 @@
     <parent>
         <groupId>com.stratio</groupId>
         <artifactId>parent</artifactId>
-        <version>0.8.2</version>
+        <version>0.11.0</version>
     </parent>
 
     <groupId>com.stratio.crossdata</groupId>
-    <artifactId>crossdata-auth-interface_2.11</artifactId>
-    <version>0.2.0-SNAPSHOT</version>
+    <artifactId>crossdata-auth-interface_2.12</artifactId>
+    <version>0.7.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Crossdata auth interface</name>
     <description>Authorization interface for Stratio Crossdata</description>
@@ -49,6 +49,21 @@
             <name>David Arroyo</name>
             <email>darroyo at stratio dot com</email>
         </developer>
+        <developer>
+            <id>pianista215</id>
+            <name>Unai Sarasola</name>
+            <email>usarasola at stratio dot com</email>
+        </developer>
+        <developer>
+            <id>mafernandez-stratio</id>
+            <name>Miguel Angel Fernandez Diaz</name>
+            <email>mafernandez at stratio dot com</email>
+        </developer>
+        <developer>
+            <id>rvassallo-stratio</id>
+            <name>Roque Vassal'lo Saco</name>
+            <email>rvassallo at stratio dot com</email>
+        </developer>
     </developers>
 
     <properties>
@@ -56,11 +71,11 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <outputFileName>stratio-crossdata</outputFileName>
         <!-- Scala version and cross build properties -->
-        <scala.binary.version>2.11</scala.binary.version>
-        <scala.version>2.11.8</scala.version>
-        <scala_2.11.version>2.11.8</scala_2.11.version>
-        <default.scala.binary.version>2.11</default.scala.binary.version>
-        <default.scala.version>${scala_2.11.version}</default.scala.version>
+        <scala.binary.version>2.12</scala.binary.version>
+        <scala.version>2.12.10</scala.version>
+        <scala_2.12.version>2.12.10</scala_2.12.version>
+        <default.scala.binary.version>2.12</default.scala.binary.version>
+        <default.scala.version>${scala_2.12.version}</default.scala.version>
     </properties>
 
     <dependencies>
@@ -114,6 +129,14 @@
                 <groupId>com.mycila</groupId>
                 <artifactId>license-maven-plugin</artifactId>
                 <configuration>
+                    <mapping>
+                        <java>SLASHSTAR_STYLE</java>
+                        <scala>SLASHSTAR_STYLE</scala>
+                        <ts>SLASHSTAR_STYLE</ts>
+                        <scss>JAVADOC_STYLE</scss>
+                        <R>SCRIPT_STYLE</R>
+                    </mapping>
+                    <header>${license.header}</header>
                     <excludes>
                         <exclude>**/.*/**</exclude>
                     </excludes>
