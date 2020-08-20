@@ -19,4 +19,7 @@ trait CrossdataSecurityManager {
 
   def filterRows(userId: String, resource: Resource): Option[String]
 
+  // TODO: Review if service & instance can be inferred from Dyplon-Crossdata in pre-facade & facade
+  def checkFineGrain(resources: List[Resource], service: String, instance: String)
+
 }
